@@ -1,3 +1,4 @@
+
 (require 'package) 
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
@@ -17,7 +18,7 @@
  '(font-use-system-font t)
  '(package-selected-packages
    (quote
-    (yaml-mode smartparens js2-mode enh-ruby-mode web-mode neotree))))
+    (flycheck rubocop slim-mode yaml-mode smartparens js2-mode enh-ruby-mode web-mode neotree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -74,4 +75,3 @@
 (add-hook 'enh-ruby-mode-hook #'smartparens-mode)
 (add-hook 'coffee-mode-hook #'smartparens-mode)
 (add-hook 'sass-mode-hook #'smartparens-mode)
-
